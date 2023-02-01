@@ -1,0 +1,1 @@
+# Projeto com Kafka e avro para apresentação de Schema Registry Equipe ZUP
