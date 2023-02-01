@@ -19,7 +19,7 @@ class KafkaAvroExampleApplicationTests {
 	@Test
 	fun testProducer() {
 		val pessoa = Pessoa("Jocimar", "Neres")
-		pessoaProducerImpl.persist("12345", pessoa)
+		pessoaProducerImpl.persiste("12345", pessoa)
 		assertEquals("Jocimar", pessoa.nome)
 		assertEquals("Neres", pessoa.sobrenome)
 	}

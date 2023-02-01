@@ -10,13 +10,12 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class KafkaAvroExampleApplication (
 	val pessoaProducerImpl: PessoaProducerImpl
-): ApplicationRunner{
+): ApplicationRunner {
 	override fun run(args: ApplicationArguments?) {
 		val pessoa = Pessoa("Jocimar", "Neres")
 		Thread.sleep(5000)
-		pessoaProducerImpl.persist("12345", pessoa)
+		pessoaProducerImpl.persiste("12345", pessoa)
 	}
-
 }
 
 fun main(args: Array<String>) {

@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "PessoaDTO",
-  "namespace": "br.com.kafkaavroxample.entity",
+  "namespace": "br.com.kafkaavroexample.entity",
   "fields" : [
     {"name": "nome", "type": "string"},
     {"name": "sobrenome", "type": "string"}

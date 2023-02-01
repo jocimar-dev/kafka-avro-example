@@ -20,7 +20,7 @@ class PessoaConsumerImp {
             )
         ]
     )
-    fun consume(@Payload pessoaDTO: PessoaDTO){
+    fun consumidor(@Payload pessoaDTO: PessoaDTO){
         val pessoa = Pessoa(pessoaDTO.getNome().toString(), pessoaDTO.getSobrenome().toString())
         println("Pessoa recebida")
         println(pessoa.toString())
