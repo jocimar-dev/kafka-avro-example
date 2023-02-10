@@ -10,8 +10,6 @@ import org.springframework.kafka.core.ProducerFactory
 class PessoaProducerConfig {
 
     @Bean
-    fun pessoaDTOTemplate(factory: ProducerFactory<String, PessoaDTO>): KafkaTemplate<String, PessoaDTO> {
-        return KafkaTemplate(factory)
-    }
+    fun pessoaDTOTemplate(factory: ProducerFactory<String, PessoaDTO>): KafkaTemplate<String, PessoaDTO> = KafkaTemplate(factory)
 
 }
